@@ -27,4 +27,4 @@ for c in carpeta:
                       top=0.8, 
                       wspace=0.0, 
                       hspace=0.1)
-  plt.show()
+  plt.savefig("CNN_capcha/Views/"+str(c)+".png")
