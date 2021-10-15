@@ -45,7 +45,7 @@ def captcha(img):
   for i in x_orden1:
     x_min,x_max,y_min,y_max= contornos_rec[i]
     img_char=threshold2[y_min:y_max, x_min:x_max]
-
+    img=cv2.rectangle(img,(x_min,y_min),(x_max,y_max),color=(255,0,0),thickness=2)
     resultado.append(img_char)
 
   return resultado,threshold2
